@@ -35,6 +35,7 @@ app.Environment.WebRootFileProvider = new CompositeFileProvider(app.Environment.
 /* The documentation way that breaks */
 var webRootProvider = new PhysicalFileProvider(builder.Environment.WebRootPath);
 var compositeProvider = new CompositeFileProvider(webRootProvider, secondaryProvider);
+//comment following line out to use webrootfileprovider assignment above that appears to work.
 app.Environment.WebRootFileProvider = compositeProvider;
 
 
